@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 
 import Broadcast from "./(container)/Broadcast";
@@ -63,7 +64,7 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [hide]);
+  }, [hide, sections]);
 
   return (
     <>

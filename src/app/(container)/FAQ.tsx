@@ -1,7 +1,6 @@
 import { Input } from "@/components/ui/input";
 import Typography from "@/components/ui/Typography";
 import { Search } from "lucide-react";
-import Image from "next/image";
 import React from "react";
 import {
   Accordion,

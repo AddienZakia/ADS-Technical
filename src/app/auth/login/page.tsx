@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Typography from "@/components/ui/Typography";
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
   const [user, setUser] = React.useState({
     identifier: "",

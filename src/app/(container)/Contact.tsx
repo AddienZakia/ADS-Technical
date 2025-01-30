@@ -49,7 +49,7 @@ export default function Contact({ ...props }) {
             weight="bold"
             className="text-2xl text-white"
           >
-            Let's Talk
+            Let&apos;s Talk
           </Typography>
           <ul className="text-white">
             <Link href="/">

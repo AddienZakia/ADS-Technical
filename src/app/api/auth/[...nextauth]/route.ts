@@ -28,7 +28,7 @@ export const authOptions: NextAuthOptions = {
   ],
   callbacks: {
     async session({ session }) {
-      let userEmail = session.user?.email;
+      const userEmail = session.user?.email;
 
       if (userEmail) {
         const getUser = dataUsers.find((x) => x.email === userEmail);

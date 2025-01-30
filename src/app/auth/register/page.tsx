@@ -17,7 +17,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
   const [user, setUser] = React.useState({
     identifier: "",

@@ -28,7 +28,8 @@ export default function Opportunity({ ...props }) {
         weight="bold"
         className="text-center text-blueCustom max-md:text-2xl lg:mx-auto lg:w-[80%] xl:w-[60%]"
       >
-        "One Step Closer to More Effective and Connected Communication!"
+        &quot;One Step Closer to More Effective and Connected
+        Communication!&quot;
       </Typography>
 
       <div className="flex flex-col items-center justify-center space-y-6 md:flex-row lg:space-y-0 lg:pr-10 xl:pl-14 xl:pr-0 2xl:pl-20">

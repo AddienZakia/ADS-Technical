@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Typography from "@/components/ui/Typography";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Bell, Calendar, Settings } from "lucide-react";
@@ -31,7 +31,7 @@ type sessionType = {
   };
 };
 
-export default function page() {
+export default function Page() {
   const { data: session, status } = useSession();
   if (status === "unauthenticated") return redirect("/auth/login");
 

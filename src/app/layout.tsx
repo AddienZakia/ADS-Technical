@@ -5,13 +5,13 @@ import { SessionProvider } from "next-auth/react";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
-export const LexendDeca = Lexend_Deca({
+const LexendDeca = Lexend_Deca({
   subsets: ["latin"],
   weight: "700",
   variable: "--font-LexendDeca",
 });
 
-export const inter = Inter({
+const inter = Inter({
   subsets: ["latin"],
   weight: "500",
   variable: "--font-Inter",

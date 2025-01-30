@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect, useRouter } from "next/navigation";
@@ -11,10 +11,13 @@ import { Input } from "@/components/ui/input";
 import Typography from "@/components/ui/Typography";
 
 export default function Page() {
-  const { status } = useSession();
-  if (status === "authenticated") return redirect("/admin");
-
   const router = useRouter();
+
+  const { status } = useSession();
+  useEffect(() => {
+    if (status === "authenticated") return router.push("/admin");
+  }, []);
+
   const [user, setUser] = React.useState({
     identifier: "",
     password: "",

@@ -9,6 +9,7 @@ import {
   Headset,
   LayoutDashboard,
   ListRestart,
+  LogOut,
   MailOpen,
   MailPlus,
   Mails,
@@ -25,6 +26,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { signOut } from "next-auth/react";
 
 export default function DashboardAdminLayout({
   children,
@@ -164,6 +166,17 @@ export default function DashboardAdminLayout({
             <Settings />
             <Typography variant="bt" className="font-medium">
               Settings
+            </Typography>
+          </div>
+          <div
+            className="flex cursor-pointer items-center justify-start gap-3 rounded-lg px-5 py-3 text-black hover:bg-blueLightCustom"
+            onClick={() => {
+              signOut({ redirect: true, callbackUrl: "/auth/login" });
+            }}
+          >
+            <LogOut />
+            <Typography variant="bt" className="font-medium">
+              Sign Out
             </Typography>
           </div>
         </div>

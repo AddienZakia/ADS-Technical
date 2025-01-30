@@ -3,14 +3,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { signIn } from "next-auth/react";
+import { redirect, useRouter } from "next/navigation";
+import { signIn, useSession } from "next-auth/react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Typography from "@/components/ui/Typography";
 
 export default function Page() {
+  const { status } = useSession();
+  if (status === "authenticated") return redirect("/admin");
+
   const router = useRouter();
   const [user, setUser] = React.useState({
     identifier: "",

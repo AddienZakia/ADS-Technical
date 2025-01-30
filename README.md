@@ -3,8 +3,8 @@
 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/repository-name.git
-cd repository-name
+git clone https://github.com/AddienZakia/ADS-Technical.git
+cd ADS-Technical
 ```
 
 2. Install Dependencies (Menggunakan PNPM)

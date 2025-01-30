@@ -100,9 +100,14 @@ export default function Navbar() {
               </SelectTrigger>
               <SelectContent className="border-none bg-white" align="center">
                 <SelectGroup>
-                  <SelectItem value="admin" className="bg-white text-gray-500">
-                    Sign in as Admin
-                  </SelectItem>
+                  <Link href="/auth/login">
+                    <SelectItem
+                      value="admin"
+                      className="bg-white text-gray-500"
+                    >
+                      Sign in as Admin
+                    </SelectItem>
+                  </Link>
                   <SelectItem value="cs" className="bg-white text-gray-500">
                     Sign in as Customer Service
                   </SelectItem>
@@ -116,9 +121,11 @@ export default function Navbar() {
             className="cursor-pointer text-blueCustom lg:hidden"
             onClick={() => setActive((pre) => !pre)}
           />
-          <Button className="hidden rounded-md bg-blueCustom px-8 py-2 text-white hover:bg-blue-700 lg:block">
-            Sign In
-          </Button>
+          <Link href="/auth/login" className="hidden lg:block">
+            <Button className="rounded-md bg-blueCustom px-8 py-2 text-white hover:bg-blue-700">
+              Sign In
+            </Button>
+          </Link>
         </section>
       </div>
     </>

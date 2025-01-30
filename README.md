@@ -16,7 +16,7 @@ pnpm install
 3. Add env pada file `.env`
 
 ```js
-NEXTAUTH_SECRET = "bD4Md/nniOnvgKlpp8H2NFqq95PwybqECl5eSbRJPe0="`
+NEXTAUTH_SECRET = "bD4Md/nniOnvgKlpp8H2NFqq95PwybqECl5eSbRJPe0="
 ```
 
 4. Run development project
